@@ -1,4 +1,5 @@
-﻿using Prism.Ioc;
+﻿using JamesTest.Core.State;
+using Prism.Ioc;
 using Prism.Modularity;
 
 namespace JamesTest.Settings
@@ -11,6 +12,7 @@ namespace JamesTest.Settings
 
                 public void RegisterTypes(IContainerRegistry containerRegistry)
                 {
+                        containerRegistry.RegisterSingleton<ScreenState>();
                 }
         }
 }
